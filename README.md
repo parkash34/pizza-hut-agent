@@ -41,7 +41,7 @@ pizza-hut-agent/
 
 1. Clone the repository
 ```
-git clone https://github.com/yourusername/pizza-hut-agent
+git clone https://github.com/parkash34/pizza-hut-agent
 ```
 
 2. Create and activate virtual environment
@@ -129,4 +129,6 @@ API_KEY=your_groq_api_key_here
 - Conversation history resets when server restarts
 - Agent only handles Pizza Hut related questions
 ```
+## 👤 Author
 
+**Om Parkash** — [LinkedIn](https://www.linkedin.com/in/om-parkash-a93a87275) · [GitHub](https://github.com/parkash34)
