@@ -31,7 +31,7 @@ like booking tables, checking the menu, and verifying availability.
 ```
 pizza-hut-agent/
 │
-├── env/               
+├── .venv/               
 ├── main.py            
 ├── .env               
 └── requirements.txt   
@@ -44,10 +44,10 @@ pizza-hut-agent/
 git clone https://github.com/parkash34/pizza-hut-agent
 ```
 
-2. Create and activate virtual environment
+2. Create and activate a virtual environment
 ```
-python -m venv env
-env\Scripts\activate
+python -m venv .venv
+.venv\Scripts\activate
 ```
 
 3. Install dependencies
@@ -55,7 +55,7 @@ env\Scripts\activate
 pip install -r requirements.txt
 ```
 
-4. Create `.env` file and add your Groq API key
+4. Create a `.env` file and add your Groq API key
 ```
 API_KEY=your_groq_api_key_here
 ```
@@ -99,7 +99,7 @@ uvicorn main:app --reload
 
 ## How It Works
 ```
-User sends message
+User sends a message
 ↓
 AI decides which tool to call
 ↓
@@ -107,7 +107,7 @@ Python executes the tool function
 ↓
 Result sent back to AI with tool role
 ↓
-AI generates natural friendly response
+AI generates a natural, friendly response
 ↓
 User receives structured JSON reply
 ```
@@ -126,8 +126,8 @@ API_KEY=your_groq_api_key_here
 ## Notes
 
 - Never commit your `.env` file to GitHub
-- Conversation history resets when server restarts
-- Agent only handles Pizza Hut related questions
+- Conversation history resets when the server restarts
+- Agent only handles Pizza Hut-related questions
 
 ## 👤 Author
 
